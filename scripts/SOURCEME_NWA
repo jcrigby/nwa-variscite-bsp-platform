@@ -1,0 +1,5 @@
+#/bin/bash
+
+MACHINE=imx6ul-var-dart DISTRO=fslc-framebuffer . setup-environment build_fb
+
+echo "now type 'bitbake fsl-image-gui' to build"
