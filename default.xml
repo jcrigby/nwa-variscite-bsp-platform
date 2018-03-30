@@ -10,6 +10,7 @@
   <remote fetch="https://github.com/OSSystems"     name="OSSystems"/>
   <remote fetch="https://github.com/sbabic"        name="sbabic"/>
   <remote fetch="https://github.com/varigit"       name="variscite"/>
+  <remote fetch="https://github.com/jcrigby"       name="jcrigby"/>
 
   <project remote="yocto"     revision="c2b641c8a0c4fd71fcb477d788a740c2c26cddce" upstream="rocko"  name="poky" path="sources/poky"/>
   <project remote="yocto"     revision="470cd54e44913f81c76538641bbdd80574624677" upstream="rocko"  name="meta-freescale" path="sources/meta-freescale"/>
@@ -19,11 +20,11 @@
   <project remote="QT5"       revision="d87335a50a9dd35d890786edbd79b8953fdaa11a" upstream="rocko"  name="meta-qt5" path="sources/meta-qt5"/>
   <project remote="OSSystems" revision="26d50665e2f7223c5f4ad7481a8d2431e7cb55fb" upstream="master" name="meta-browser" path="sources/meta-browser"/>
   <project remote="sbabic"    revision="0fb115e97187c069f0da90163f1f374a6b7a4af7" upstream="rocko"  name="meta-swupdate" path="sources/meta-swupdate"/>
-  <project remote="variscite" revision="bfe1ba0e2f41515ebfdf6ef4aee9e66dbbccaf20" upstream="rocko"  name="meta-variscite-fslc" path="sources/meta-variscite-fslc"/>
 
   <project remote="variscite" revision="pyro" name="variscite-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
+  <project remote="jcrigby" revision="master" name="meta-nwa" path="sources/meta-nwa"/>
 
 </manifest>
