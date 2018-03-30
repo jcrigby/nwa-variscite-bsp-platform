@@ -1,9 +1,9 @@
 #/bin/bash
-set -x
-set -e
+#set -x
+#set -e
 
 NWADIR=$1
-export NWADIR=${NWADIR:-"nwa-yocto-dir"}
+export NWADIR=${NWADIR:-"nwa-var-fslc-yocto"}
 
 install_some_packages() {
     echo "install some packages"
@@ -48,7 +48,7 @@ run_repo_init() {
     echo "setting up in $NWADIR"
     mkdir -p $NWADIR
     cd $NWADIR
-    repo init -u https://github.com/varigit/variscite-bsp-platform.git -b rocko
+    repo init -u https://github.com/jcrigby/nwa-variscite-bsp-platform.git -b rocko
     repo sync -j4
 }
 

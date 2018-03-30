@@ -1,4 +1,23 @@
-= Variscite Release Notes
+= Variscite BSP Plus NWA Specifics
+
+= Run a script that will do most setup for you
+
+Download nwsetup from scripts and put somewhere in your path
+[source,console]
+$: mkdir -p some/dir/to/work/in
+$: cd some/dir/to/work/in
+$: nwsetup
+
+The script will
+
+* Download a bunch of useful development packages
+* Remind you to setup git username and email settings if not yet set up
+* Download repo if it is not found in your path
+* Run repo init and sync on the manifest in this repo
+
+Or do the original Variscite thing
+
+= Original Variscite Release Notes
 
 This branch is based on 
 
@@ -23,7 +42,7 @@ Download the BSP source:
 $: PATH=${PATH}:~/bin
 $: mkdir ~/var-fslc-yocto
 $ cd ~/var-fslc-yocto
-$ repo init -u https://github.com/varigit/variscite-bsp-platform.git -b rocko
+$ repo init -u https://github.com/jcrigby/nwa-variscite-bsp-platform.git -b rocko
 $ repo sync -j4
 
 At the end of the commands you have every metadata you need to start work with.
