@@ -26,6 +26,8 @@
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
-  <project remote="jcrigby" revision="master" name="meta-nwa" path="sources/meta-nwa"/>
+  <project remote="jcrigby" revision="master" name="meta-nwa" path="sources/meta-nwa">
+	<copyfile dest="SOURCEME" src="scripts/SOURCEME"/>
+  </project>
 
 </manifest>
