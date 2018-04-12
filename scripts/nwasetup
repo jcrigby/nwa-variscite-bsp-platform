@@ -20,6 +20,9 @@ install_some_packages() {
 	libgl1-mesa-dev libglu1-mesa-dev mercurial automake groff \
 	curl lzop asciidoc u-boot-tools dos2unix mtd-utils pv \
 	libncurses5 libncurses5-dev libncursesw5-dev libelf-dev
+
+    echo "install gtk dev files for gdk-pixbuf-csource"
+    sudo apt-get install libgtk2.0-dev
 }
 
 
