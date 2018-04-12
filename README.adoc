@@ -2,11 +2,11 @@
 
 = Run a script that will do most setup for you
 
-Download nwsetup from scripts and put somewhere in your path
+Download nwasetup from scripts and put somewhere in your path
 [source,console]
 $: mkdir -p some/dir/to/work/in
 $: cd some/dir/to/work/in
-$: nwsetup
+$: nwasetup
 
 The script will
 
