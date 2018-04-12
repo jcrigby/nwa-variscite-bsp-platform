@@ -51,7 +51,7 @@ To start a simple image build:
 
 [source,console]
 $: MACHINE=<machine> DISTRO=<distro> source ./setup-environment <build directory>
-$: bitbake core-image-base
+$: bitbake fsl-image-qt5
 
 You can use any directory to host your build.
 
