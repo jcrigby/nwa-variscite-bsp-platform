@@ -15,6 +15,20 @@ The script will
 * Download repo if it is not found in your path
 * Run repo init and sync on the manifest in this repo
 
+Once the script is finished you should find your self in a directory
+called nwa-var-fslc-yocto.
+From there you can source a setup file called SOURCEME that will do some
+setup and put in in a build file.
+From there you can build an image:
+[source,console]
+$: . ./SOURCEME
+...
+$: bitbake fsl-image-qt5
+
+Once that is finished there will be an sdcard image file in
+tmp/deploy/images/imx6ul-var-dart/fsl-image-qt5-imx6ul-var-dart-<DATESTRING>.sdcard.
+You can dd that to an sdcard and boot your dart board.
+
 Or do the original Variscite thing
 
 = Original Variscite Release Notes
